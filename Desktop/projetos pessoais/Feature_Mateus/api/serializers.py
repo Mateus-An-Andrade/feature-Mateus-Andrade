@@ -9,10 +9,11 @@ class CategoriaSerializer(serializers.ModelSerializer):
 
 
 class ProdutoSerializer(serializers.ModelSerializer):
-# objetivo: o nome da categoria, não só o ID
-    categoria = serializers.StringRelatedField()
-
+    categoria_nome = serializers.StringRelatedField(source='categoria', read_only=True)
+    categoria = serializers.PrimaryKeyRelatedField(
+        queryset=Categoria.objects.all()
+    )
 
     class Meta:
         model = Produto
-        fields = '__all__'
+        fields = ['id', 'nome', 'descricao', 'preco', 'categoria', 'categoria_nome']
