@@ -1,23 +1,51 @@
-°README-CANDIDATO: Mateus Andrade
+README - Candidato: Mateus Andrade
+========================================================================================================
+==>Instruções para rodar:
 
-°Instruções para rodar
-°Pré-requisitos
 
-°Python 3.13.2
+Pré-requisitos
 
-°Django 6.0
+Python 3.13.2
 
-°Django REST Framework
+Django 6.0
 
-°Variáveis de ambiente
+Django REST Framework
 
-°SECRET_KEY →'django-insecure-#aipb5=kqss)xy@(aan-%__%!wkbypikh7o#et5+&a=^wsq^=j';
+Variáveis de ambiente
 
-°DEBUG → True;
+SECRET_KEY → 'django-insecure-#aipb5=kqss)xy@(aan-%__%!wkbypikh7o#et5+&a=^wsq^=j'
 
-°DATABASES = {
+DEBUG → True
+
+DATABASES:
+
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+========================================================================================================
+==>Dificuldades encontradas:
+
+ ->Ajustar a exibição do nome da categoria no serializador de Produto usando StringRelatedField.
+
+ ->Configurar testes unitários para criação e listagem de produtos com APITestCase do DRF.
+
+==>O que não teve tempo de fazer
+
+ ->Implementação de deploy via Render.
+
+ ->Documentação Swagger/OpenAPI.
+
+ ->Testes mais completos para cobrir duplicidade de produtos ou outros dados.
+
+==>Recomendações:
+========================================================================================================
+ ->Adicionar autenticação para a API (JWT/Token).
+
+ ->Configurar PostgreSQL para produção.
+
+ ->Melhorar validações nos serializadores e criar testes adicionais.
+
+ ->Implementar documentação Swagger/OpenAPI para os endpoints.
