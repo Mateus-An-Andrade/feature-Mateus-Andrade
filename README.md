@@ -1,21 +1,21 @@
-README-CANDIDATO: Mateus Andrade
+°README-CANDIDATO: Mateus Andrade
 
-Instruções para rodar
-Pré-requisitos
+°Instruções para rodar
+°Pré-requisitos
 
-Python 3.13.2
+°Python 3.13.2
 
-Django 6.0
+°Django 6.0
 
-Django REST Framework
+°Django REST Framework
 
-Variáveis de ambiente
+°Variáveis de ambiente
 
-SECRET_KEY →'django-insecure-#aipb5=kqss)xy@(aan-%__%!wkbypikh7o#et5+&a=^wsq^=j';
+°SECRET_KEY →'django-insecure-#aipb5=kqss)xy@(aan-%__%!wkbypikh7o#et5+&a=^wsq^=j';
 
-DEBUG → True;
+°DEBUG → True;
 
-DATABASES = {
+°DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
